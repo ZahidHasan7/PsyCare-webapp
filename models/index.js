@@ -1,21 +1,22 @@
-// const sequelize = require('../database'); // Import the database connection
+ 
+// const sequelize = require('../database');
 // const User = require('./user');
-
-// // Add other models here as needed
+// const Post = require('./post'); // Add this line
 
 // module.exports = {
 //   sequelize,
 //   User,
+//   Post, // Add this line
 //   // Export other models
 // };
-
 const sequelize = require('../database');
 const User = require('./user');
-const Post = require('./post'); // Add this line
+const Post = require('./post');
+const ConsultantsAdvice = require('./consultantsAdvice');
 
 module.exports = {
   sequelize,
   User,
-  Post, // Add this line
-  // Export other models
+  Post,
+  ConsultantsAdvice,
 };
